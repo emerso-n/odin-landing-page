@@ -1,0 +1,186 @@
+#header{
+    background-color: black;
+    display: flex;
+    padding: 1.5em;
+    gap: 1.5em;
+    line-height: 1em;
+    position: fixed;
+    width: 100%;
+    font-family: sans-serif;
+}
+#logo{
+    font-size: 2em;
+    color: white;
+    margin-right: auto;
+}
+a{
+   text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: red;
+}
+
+
+#page_con{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+
+#slice_1{
+    
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+#slice_1 > div{
+    width: 500px;
+    text-align: right;
+}
+h1, h2{
+    font-size: 2em;    
+}
+#slice_1 button{
+    padding: 1em;
+    margin-top: 1em;
+}
+#img{
+    height: 300px;
+    background: white;
+}
+
+
+#slice_2{
+    background: -webkit-linear-gradient(white 20%, black 90%);
+    padding: 2em;
+}
+h2{
+    text-align: center;
+}
+#info-box_con{
+    margin: 1em 0;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+    gap: 1em;
+}
+.info-box{
+    height: 400px;
+    width: 300px;
+    padding: 2em 1em;
+    background: black;
+    color: white;
+    text-align: center;
+    transition: transform .5s ease-in-out, color .5s linear; 
+}
+.info-box:hover{
+    transform: scale(1.05);
+/*     padding-top: 200px; */
+    color: red;
+    transition: transform .5s ease-in-out, color 2s ease-in;
+}
+
+
+#slice_3{
+    background-color: black;
+    color: white;
+    padding: 10em;
+    padding-bottom: 8em;
+}
+#quote{
+    border: 2px solid white;
+}
+#quote-text{
+    font-size: 2em;
+    font-style: italic;
+}
+#quote-source{
+    font-size: 1.5em;
+    text-align: right;
+    margin-top: 1em;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+
+#slice_4{
+/*     background: -webkit-linear-gradient(black 10%, white 50%); */
+    background: white;
+    padding: 0 12em;
+    padding-top: 40vh;
+    height: 100vh;
+}
+#CTA-con{
+    background-color: black;
+    color: white;
+    padding: 4em;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#CTA-con > p{
+    font-size: 1.5em;
+}
+#CTA-con button{
+    background: none;
+    border: 1px solid white;
+    border-radius: .5em;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1em;
+    font-size: 1em;
+    z-index: 2;
+}
+#CTA-con button:hover{
+    color: white;
+    background: red;
+    border-color: red;
+}
+
+#button-background{
+    background: url("images/giveusyoursoul.svg"), black;
+    background-position: 10px -10px; 
+    height: 100vh;
+    position: fixed;
+    inset: 0 0 0 0;
+    animation-name: background-anim;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    font-size: 10px;
+}
+@keyframes background-anim{
+    0%{
+        background-position: -1.4em -1.2em;
+    }
+    20%{
+        background-position: 1.2em -1em;
+    }
+    55%{
+        background-position: -1.2em 1.6em;
+    }
+    80%{
+        background-position: 1em 1.4em;
+    }
+    100%{
+        background-position: -1.4em -1.2em;
+    }
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: .5em 0;
+}
