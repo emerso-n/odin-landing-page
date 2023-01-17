@@ -39,26 +39,34 @@ a:hover{
 
 #slice_1{
     background: -webkit-radial-gradient(black 20%, transparent); 
-    height: 100vh;
-    color: white;
+    min-height: 100vh;   
+    max-height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2em;
 }
 video{   
     width: 100%;
     height: 100%;
+    top: 0;
     object-fit: cover;
     position: absolute;
     z-index: -1;
 }
-#slice_1 > div{
+#intro_con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;  
+}
+#intro-text, #img{
     width: min(28em, 40%);
     text-align: right;
 }
 h1{
     font-size: 2.3em; 
+    white-space: nowrap;
 }
 
 #slice_1 button{
@@ -210,7 +218,6 @@ h2{
     background: red;
     border-color: red;
 }
-
 #button-background{
     background: url("images/giveusyoursoul.svg"), black;
     background-position: 10px -10px; 
