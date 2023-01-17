@@ -20,9 +20,9 @@
       }
     }
   </script>
-  <body>
+  <body onload="document.getElementById('video').playbackRate = 0.75; ">
     <nav id="header">
-      <div id="logo">CORPORATION</div>
+      <img id="logo" src="static/images/corporationlogo-white.svg"/>
       <a href="#">about</a>
       <a href="#">services</a>
       <a href="#">contact</a>
@@ -32,38 +32,55 @@
         <div>
           <h1>WE WANT YOUR SOUL</h1>
           <p>
-            Here at <em>CORPORATION</em> we are all about souls. We have them but we
+            Here at <span><img src="static/images/corporationlogo-white.svg"/></span> we are all about souls. We have them but we
             would like some more. We will do good things with your soul so you
             should give it to us please.
           </p>
           <button>Give your soul</button>
         </div>
-        <div id="img"></div>
+       <div id="img"></div>
+        <video id="video" src="static/images/waves.mp4" type="video/mp4" autoplay="" loop="" playsinline="" preload="auto" playbackspeed="0.5"></video>
       </div>
       <div id="slice_2">
         <h2>YOU CAN TRUST US WITH YOUR SOUL</h2>
         <div id="info-box_con">
           <div class="info-box">
-            <p>We are a very trustworthy <em>CORPORATION</em></p>
+            <p>We are a very trustworthy <span><img src="static/images/corporationlogo-white.svg"/></span></p>
+            <div class="icons">
+              <img class="icon1" src="static/images/like-1.png"/>
+              <img class="icon2" src="static/images/like-2.png"/>
+            </div>
           </div>
           <div class="info-box">
             <p>We just really like souls and want yours</p>
+            <div class="icons">
+              <img class="icon1" src="static/images/heart.png"/>
+              <img class="icon2" src="static/images/heart-2.png"/>
+            </div>
           </div>
           <div class="info-box">
             <p>We will not do bad things to your soul</p>
+            <div class="icons">
+              <img class="icon1" src="static/images/no.svg"/>
+              <img class="icon2" src="static/images/no-2.svg"/>
+            </div class="icons">
           </div>
           <div class="info-box">
             <p>You will get cool powers if you give us your soul</p>
+           <div class="icons">
+              <img class="icon1" src="static/images/eye-1.svg"/>
+              <img class="icon2" src="static/images/eye-2.svg"/>
+           </div>
           </div>
         </div>
       </div>
       <div id="slice_3">
         <div id="quote_con">
           <div id="quote-text">
-            "<em>CORPORATION</em> is a very good company. I gave them my soul and nothing
+            " <span><img src="static/images/corporationlogo-white.svg"/></span> is a very good company. I gave them my soul and nothing
             bad happened to me. In fact, I got cool powers after I gave them my
             soul! I had a very good experience and you should give them your
-            soul like I did."
+            soul like I did. "
           </div>
           <div id="quote-source">-A Customer</div>
         </div>
@@ -77,7 +94,7 @@
         </div>
       </div>
       <div id="button-background" style="display: none"></div>
-      <div id="footer">&copy;2023 CORPORATION Corp.</div>
+      <div id="footer">&copy;2023 <span><img src="static/images/corporationlogo-white.svg"/></span> Corp.</div>
     </div>
   </body>
 </html>

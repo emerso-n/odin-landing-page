@@ -1,9 +1,11 @@
 body{
      font-family: quicksand;
 }
-#header, em, #footer, button{
+#header, #footer, button{
     font-family: raleway;
-/*     font-weight: bold; */
+}
+span img{
+    height: .6em;
 }
 h1, h2{
     font-family: raleway;
@@ -14,13 +16,11 @@ h1, h2{
     display: flex;
     padding: 1.5em;
     gap: 1.5em;
-    line-height: 1em;
     position: fixed;
     width: 100%;   
 }
 #logo{
-    font-size: 2em;
-    color: white;
+    height: 1.5em;
     margin-right: auto;
 }
 a{
@@ -33,15 +33,12 @@ a:hover{
 
 
 #page_con{
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
+    font-size: clamp(14px, 1.2vw, 20px);
 }
 
 
 #slice_1{
-    
-    background-color: black;
+    background: -webkit-radial-gradient(black 20%, transparent); 
     height: 100vh;
     color: white;
     display: flex;
@@ -49,17 +46,24 @@ a:hover{
     justify-content: center;
     gap: 2em;
 }
+video{   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
 #slice_1 > div{
-    width: 500px;
+    width: min(28em, 40%);
     text-align: right;
 }
-h1, h2{
-    font-size: 2em;    
+h1{
+    font-size: 2.3em; 
 }
+
 #slice_1 button{
     padding: .9em 1em;
     margin-top: 1em;
-    border: none;
     background: none;
     border-radius: .5em;
     font-size: .9em;
@@ -70,54 +74,84 @@ h1, h2{
 }
 #slice_1 button:hover{
     background: white;
-    color: black;
-    
+    color: black;   
 }
 #img{
-    height: 300px;
-    background: white;
+    height: 17em;
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.7), transparent);
 }
 
 
 #slice_2{
     background: -webkit-linear-gradient(white 20%, black 90%);
-    padding: 2em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 h2{
+    height: 4em;
+    line-height: 4em;
+    font-size: 2.5em;    
     text-align: center;
 }
 #info-box_con{
-    margin: 1em 0;
-    width: 100%;
     display: flex;
-   justify-content: center;
-    gap: 1em;
+    flex: 1;
+    justify-content: center;
+    gap: 1.2em;
 }
 .info-box{
-    height: 400px;
-    width: 300px;
-    padding: 2em 1em;
+    width: min(320px, 22%);
+    padding: 2.5em 1em;
     background: black;
     color: white;
+    font-weight: 500;
+    font-size: max(1.1em, 18px);
+/*     font-size: 21px; */
     text-align: center;
-    transition: transform .5s ease-in-out, color .5s linear; 
+    transition: .5s ease-in-out; 
 }
 .info-box:hover{
     transform: scale(1.05);
-/*     padding-top: 200px; */
-    color: red;
-    transition: transform .5s ease-in-out, color 2s ease-in;
+    transition: .5s ease-in-out;
 }
-
+.info-box p{
+    height: 4.5em;
+}
+.icons{
+    position: relative;
+    width: min-content;
+    margin: 0 auto;
+}
+.icons img{
+    height: 6em;
+    transition: .5s ease-in-out, opacity .5s linear;
+}
+.icon2{
+    position: absolute;
+    left: 0;
+    right: 0;  
+    opacity: 0;
+}
+.info-box:hover .icon1, .info-box:hover .icon2{
+    height: 7em;
+    -webkit-transition: .5s ease-in-out, opacity 2s ease-in;
+}
+.info-box:hover .icon2{
+    opacity: 1;
+}
 
 #slice_3{
-    background-color: black;
+    background: -webkit-linear-gradient(black, transparent 40%), url("images/wireframe.png") no-repeat fixed, black;
+    background-size: 100%;
     color: white;
-    padding: 10em;
-    padding-bottom: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-#quote{
-    border: 2px solid white;
+#quote_con{
+    width: min(1150px, 75%);
 }
 #quote-text{
     font-size: 2em;
@@ -133,23 +167,28 @@ h2{
 
 
 #slice_4{
-/*     background: -webkit-linear-gradient(black 10%, white 50%); */
     background: white;
-    padding: 0 12em;
-    padding-top: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 #CTA-con{
     background-color: black;
     color: white;
+    width: min(1200px, 60%);
     padding: 4em;
     border-radius: 1em;
     display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
 #CTA-con > p{
     font-size: 1.5em;
+    line-height: 1.1;
+    text-align: center;
 }
 #CTA-con button{
     background: none;
@@ -174,12 +213,12 @@ h2{
     position: fixed;
     inset: 0 0 0 0;
     animation-name: background-anim;
-    animation-duration: .5s;
+    animation-duration: .3s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-play-state: paused;
-    font-size: 10px;
+    font-size: 10px; /* this controls the intensity of the shake btw */
 }
 @keyframes background-anim{
     0%{
@@ -203,6 +242,6 @@ h2{
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 16px;
+/*     font-size: 16px; */
     padding: .5em 0;
 }
