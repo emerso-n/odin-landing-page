@@ -236,6 +236,9 @@ h2{
     0%{
         background-position: -1.4em -1.2em;
     }
+    5%{
+        background-position: -1em -1em;
+    }
     20%{
         background-position: 1.2em -1em;
     }
