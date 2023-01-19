@@ -218,7 +218,7 @@ h2{
     background: red;
     border-color: red;
 }
-#button-background{
+.give-background{
     background: url("images/giveusyoursoul.svg"), black;
     background-position: 10px -10px; 
     height: 100vh;
@@ -252,6 +252,25 @@ h2{
         background-position: -1.4em -1.2em;
     }
 }
+.thanks-background{
+    background: #626262;
+    height: 100vh;
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 3;
+/*     display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+.thanks-background p{
+    font-size: 24em;
+    font-family: serif;
+    transform: rotate(-20deg);
+    text-align: center;
+    white-space: nowrap;
+    line-height: .8em;
+}
+
 
 #footer{
     background-color: black;

@@ -13,15 +13,29 @@
     <title>Welcome to CORPORATION</title>
   </head>
   <script>
-    function ToggleBackground(divid) {
-      var x = document.getElementById(divid);
-      if (x.style.display === "none") {
-        x.style.display = "block";
-        x.style.animationPlayState = "running";
-      } else {
-        x.style.display = "none";
-        x.style.animationPlayState = "paused";
-      }
+    function ToggleBackground() {
+        let x = document.getElementsByClassName("give-background")[0];
+
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          x.style.animationPlayState = "running";
+        } else {
+          x.style.display = "none";
+          x.style.animationPlayState = "paused";
+        }
+      } 
+
+    function GiveSoul(divid){
+      let btn = document.getElementById("give-btn")
+      btn.onmouseenter=""
+      btn.onmouseleave=""
+      let div = document.getElementsByClassName("give-background")[0];
+      let p = document.createElement("p");
+      p.innerHTML = "ThankYou<br>(:"
+      div.appendChild(p)
+      div.className = "thanks-background";
+      div.style.display = "flex"
+      div.style.animationPlayState = "paused"
     }
   </script>
   <body onload="document.getElementById('video').playbackRate = 0.75; ">
@@ -94,12 +108,12 @@
       <div id="slice_4">
         <div id="CTA-con">
           <p>OK, it's time! Give us your soul!</p>
-          <button onmouseenter="ToggleBackground('button-background')" onmouseleave="ToggleBackground('button-background')">
+          <button id="give-btn" onmouseenter="ToggleBackground()" onmouseleave="ToggleBackground()" onclick="GiveSoul()">
             Give us your soul
           </button>
         </div>
       </div>
-      <div id="button-background" style="display: none"></div>
+      <div id="button-background" style="display: none" class="give-background"></div>
       <div id="footer">&copy;2023 <span><img src="static/images/corporationlogo-white.svg"/></span> Corp.</div>
     </div>
   </body>
