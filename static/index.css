@@ -276,6 +276,17 @@ h2{
     background-color: black;
     color: white;
     text-align: center;
-/*     font-size: 16px; */
+    position: relative;
     padding: .5em 0;
+    
+}
+#footer:after{
+    content: "in collaboration with emerso-n";
+    position: absolute;
+    padding-left: .5em;
+    color: #272727;
+    transition: all 1s;
+}
+#footer:hover:after{
+    color: #8f8f8f;
 }
