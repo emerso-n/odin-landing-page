@@ -39,9 +39,9 @@ a:hover{
 
 
 #slice_1{
-/*     background: -webkit-radial-gradient(black 20%, transparent);  */
-    background: red;
-    height: 100lvh;   
+    background: -webkit-radial-gradient(black 20%, transparent); 
+/*     background: red; */
+    height: 100svh;   
 /*     max-height: fit-content; */
     display: flex;
     align-items: center;
