@@ -39,7 +39,7 @@ a:hover{
 
 #slice_1{
     background: -webkit-radial-gradient(black 20%, transparent); 
-    min-height: 100vh;   
+    min-height: 100svh;   
     max-height: fit-content;
     display: flex;
     align-items: center;
@@ -92,7 +92,7 @@ h1{
 
 #slice_2{
     background: -webkit-linear-gradient(white 20%, black 90%);
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
 }
@@ -161,7 +161,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100svh;
 }
 #quote_con{
     width: min(1150px, 75%);
@@ -184,7 +184,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100svh;
 }
 #CTA-con{
     background-color: black;
@@ -221,7 +221,7 @@ h2{
 .give-background{
     background: url("images/giveusyoursoul.svg"), black;
     background-position: 10px -10px; 
-    height: 100vh;
+    height: 100svh;
     position: fixed;
     inset: 0 0 0 0;
     animation-name: background-anim;
@@ -254,7 +254,7 @@ h2{
 }
 .thanks-background{
     background: #626262;
-    height: 100vh;
+    height: 100svh;
     position: fixed;
     inset: 0 0 0 0;
     z-index: 3;
