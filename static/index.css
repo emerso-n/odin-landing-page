@@ -18,7 +18,7 @@ h1, h2{
     gap: 1.5em;
     position: fixed;
     width: 100%;   
-    z-index: 2;
+    z-index: 1;
 }
 #logo{
     height: 1.5em;
@@ -218,6 +218,7 @@ h2{
     color: white;
     background: red;
     border-color: red;
+    z-index: 3;
 }
 .give-background{
     background: url("images/giveusyoursoul.svg"), black;
@@ -232,6 +233,8 @@ h2{
     animation-timing-function: linear;
     animation-play-state: paused;
     font-size: 10px; /* this controls the intensity of the shake btw */
+    z-index: 2;
+    pointer-events: none;
 }
 @keyframes background-anim{
     0%{
