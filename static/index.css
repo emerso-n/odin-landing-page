@@ -40,7 +40,7 @@ a:hover{
 
 #slice_1{
     background: -webkit-radial-gradient(black 20%, transparent); 
-    min-height: 100lvh;   
+    height: 100lvh;   
     max-height: fit-content;
     display: flex;
     align-items: center;
