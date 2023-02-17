@@ -18,6 +18,7 @@ h1, h2{
     gap: 1.5em;
     position: fixed;
     width: 100%;   
+    z-index: 2;
 }
 #logo{
     height: 1.5em;
@@ -92,7 +93,7 @@ h1{
 
 #slice_2{
     background: -webkit-linear-gradient(white 20%, black 90%);
-    height: 100lvh;
+    min-height: 100lvh;
     display: flex;
     flex-direction: column;
 }
@@ -161,7 +162,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100lvh;
+    min-height: 100lvh;
 }
 #quote_con{
     width: min(1150px, 75%);
@@ -278,7 +279,7 @@ h2{
     text-align: center;
     position: relative;
     padding: .5em 0;
-    
+    position: relative;
 }
 #footer:after{
     content: "in collaboration with emerso-n";

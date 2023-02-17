@@ -11,6 +11,22 @@
     flex: 1 2 50%; 
   }
 }
+@media screen and (max-width: 600px){
+  #footer{
+   padding: .8em 0 .8em 0;
+  }
+  #footer:after{
+/*     content: "in collaboration with emerso-n"; */
+    position: absolute;
+/*     padding-left: .5em; */
+/*     color: #272727; */
+/*     transition: all 1s; */
+    inset: 1.7em 0 0 0;
+    line-height: 1em;
+    margin: 0 auto;
+    color: red;
+  }
+}
 @media screen and (max-width: 550px){
   h1{
     white-space: normal;
